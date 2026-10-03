@@ -2,10 +2,10 @@
   "name": "PROJECT NAME",
   "version": "1.0.0",
   "description": "",
-  "main": "./main.ts",
+  "main": "./dist/main.js",
   "scripts": {
     "build": "tsc",
-    "start": "pnpm exec tsx ./main.ts",
+    "start": "pnpm exec tsx .//dist/main.js",
     "dev": "environment=dev pnpm exec tsx --watch ./main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
