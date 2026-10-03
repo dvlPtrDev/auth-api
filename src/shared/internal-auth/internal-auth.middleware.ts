@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest, HookHandlerDoneFunction } from "fastify";
 import { internalSecretHeaderSchema } from "./internal-auth.schema";
 import { env } from "../../config/env.config";
-import { handleZodResult } from "./..//shared/helper/helper.zod";
+import { handleZodResult } from "../helper/helper.zod";
 import { sendReply } from "../../shared/response/response.helper";
 import { ErrorResult } from "../../shared/response/response.schema";
 import { ErrorCode } from "../../shared/http/http.types";
