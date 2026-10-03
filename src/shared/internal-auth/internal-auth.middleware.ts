@@ -1,10 +1,10 @@
 import { FastifyReply, FastifyRequest, HookHandlerDoneFunction } from "fastify";
 import { internalSecretHeaderSchema } from "./internal-auth.schema";
-import { env } from "../../../../auth/src/config/env.config";
-import { handleZodResult } from "../../../../auth/src/shared/helper/helper.zod";
-import { sendReply } from "../../../../auth/src/shared/response/response.helper";
-import { ErrorResult } from "../../../../auth/src/shared/response/response.schema";
-import { ErrorCode } from "../../../../auth/src/shared/http/http.types";
+import { env } from "../../config/env.config";
+import { handleZodResult } from "./..//shared/helper/helper.zod";
+import { sendReply } from "../../shared/response/response.helper";
+import { ErrorResult } from "../../shared/response/response.schema";
+import { ErrorCode } from "../../shared/http/http.types";
 
 function get_token() {
     return env.loadVar("API_SECRET");
